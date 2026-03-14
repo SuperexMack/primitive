@@ -1,4 +1,5 @@
 import CopyCode from "../Components/CopyCode";
+import { Installing } from "../Components/InstallingSection";
 import Navbar from "../Components/Navbar";
 
 export function HomeSection(){
@@ -45,6 +46,11 @@ export function HomeSection(){
 
         <div className="w-full h-auto p-2">
            <CopyCode></CopyCode>
+        </div>
+
+
+        <div className="w-full h-auto p-2">
+           <Installing></Installing>
         </div>
 
         </div>
