@@ -1,4 +1,5 @@
 import CopyCode from "../Components/CopyCode";
+import Footer from "../Components/Footer";
 import { Installing } from "../Components/InstallingSection";
 import Navbar from "../Components/Navbar";
 
@@ -52,6 +53,12 @@ export function HomeSection(){
         <div className="w-full h-auto p-2">
            <Installing></Installing>
         </div>
+
+        <footer className="w-full h-auto">
+
+        <Footer></Footer>
+
+        </footer>
 
         </div>
         </>

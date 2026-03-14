@@ -1,6 +1,7 @@
 "use client"
 import { useState } from "react";
 import { Copy } from "lucide-react";
+import { ToastContainer, toast } from "react-toastify";
 
 export function Installing() {
 
@@ -13,6 +14,17 @@ export function Installing() {
   const makeValue = (value:number)=>{
     setCopyValue(valArray[value])
     setColorValue(value)
+  }
+
+
+  const copyText = async(value:string)=>{
+    try{
+      await navigator.clipboard.writeText(value)
+      toast.success("Copied value")
+    }
+    catch(error){
+        toast.error("Unable to copy")
+    }
   }
 
   
@@ -102,7 +114,7 @@ export function Installing() {
                     <h1>$ {copyValue}</h1>
                 </div>
 
-                <div>
+                <div onClick={()=>copyText(copyValue)}>
                     <Copy></Copy>
                 </div>
             </div>
