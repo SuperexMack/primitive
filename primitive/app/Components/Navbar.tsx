@@ -33,7 +33,7 @@ export default function Navbar({works,contact}:any){
      <>
      <div className="fixed top-0 z-50 w-full bg-black/60 backdrop-blur-md h-[80px]  flex items-center justify-center">
         <div className="absolute left-[10%] flex items-center justify-center space-x-2">
-            <Link href={"/"}><h1 className="text-[40px] font-bold toptext">Primitive</h1></Link>
+            <Link className="text-white" href={"/"}><h1 className="text-[40px] font-bold toptext">Primitive</h1></Link>
 	    </div>
 
 	<div className="flex  max-[1000px]:hidden justify-center items-center space-x-5">
@@ -44,7 +44,7 @@ export default function Navbar({works,contact}:any){
 	</div>
 
    <div className="absolute min-[1000px]:hidden right-[10%]">
-       <List onClick={toogle} className=" h-[30px] cursor-pointer w-[30px]"></List>
+       <List onClick={toogle} className=" h-[30px] text-white cursor-pointer w-[30px]"></List>
    </div>
 
      </div>

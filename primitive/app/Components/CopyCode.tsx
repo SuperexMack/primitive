@@ -179,7 +179,7 @@ export async function POST(req: Request) {
           <div className="relative z-50 w-[100px] left-[75%] md:left-[90%] top-[50px] md:top-[80px]">
             <button
               onClick={() => textCopied(firstCode)}
-              className={select ? `md:border-2 md:border-white p-1 md:p-2 hover:cursor-pointer font-bold border-1 rounded-lg border-white ` : "hidden"}
+              className={select ? `md:border-2 md:border-white text-white p-1 md:p-2 hover:cursor-pointer font-bold border-1 rounded-lg border-white ` : "hidden"}
             >
               Copy
             </button>

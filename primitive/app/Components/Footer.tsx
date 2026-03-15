@@ -13,30 +13,30 @@ export default function Footer({ myref }: any) {
           <div className="w-[500px]  h-full p-7  flex flex-col space-y-5">
             <div className=" flex  space-x-2">
               
-              <h1 className="text-[40px] font-bold toptext">Primitive</h1>
+              <h1 className="text-[40px] text-white font-bold toptext">Primitive</h1>
             </div>
 
             <div className="md:w-[70%] w-full">
-              <p>
+              <p className="text-white">
                 We've made email into a developer primitive. Get all of your emails, 
                 across all domains and aliases, sent immediately to your webhook.
               </p>
             </div>
 
             <div className="md:w-[70%] w-full flex space-x-8">
-              <Link href={"/"}>
+              <Link className="text-white" href={"/"}>
                 <Linkedin></Linkedin>
               </Link>
-              <Link href={"https://github.com/SuperexMack/primitive"}>
+              <Link className="text-white" href={"https://github.com/SuperexMack/primitive"}>
                 <Github></Github>
               </Link>
-              <Link href={"/"}>
+              <Link className="text-white" href={"/"}>
                 <Twitter></Twitter>
               </Link>
             </div>
 
             <div>
-              <p className="">
+              <p className="text-white">
                 &copy; {new Date().getFullYear()} Primitive. all rights reserved
               </p>
             </div>
@@ -44,17 +44,17 @@ export default function Footer({ myref }: any) {
 
           <div className="w-[500px] h-full flex space-x-5">
             <div className="h-full w-[48%] p-7 flex flex-col space-y-3">
-              <h1 className="font-bold ">Legal</h1>
-              <h2>Private-policy</h2>
-              <h2>Terms of service</h2>
-              <h2>Copyright</h2>
+              <h1 className="font-bold text-white">Legal</h1>
+              <h2 className="text-white">Private-policy</h2>
+              <h2 className="text-white">Terms of service</h2>
+              <h2 className="text-white">Copyright</h2>
             </div>
 
             <div className="h-full w-[48%] p-7 flex flex-col space-y-3">
-              <h1 className="font-bold">pages</h1>
-              <h2>Contact-Page</h2>
-              <h2>About</h2>
-              <h2>Follow</h2>
+              <h1 className="font-bold text-white">pages</h1>
+              <h2 className="text-white">Contact-Page</h2>
+              <h2 className="text-white">About</h2>
+              <h2 className="text-white">Follow</h2>
             </div>
           </div>
         </div>
