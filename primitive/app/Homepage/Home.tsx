@@ -50,10 +50,10 @@ export function HomeSection() {
           </p>
 
           <div className="flex gap-4 items-center mb-16">
-            <button className="px-7 py-3 bg-green-700 hover:bg-green-500 hover:font-bold text-white font-medium text-sm rounded-lg transition-all duration-200 hover:-translate-y-px">
+            <button onClick={()=>window.open("https://www.primitive.dev/signup")} className="px-7 py-3 bg-green-700 hover:bg-green-500 hover:font-bold text-white font-medium text-sm rounded-lg transition-all duration-200 hover:-translate-y-px">
               Get Started
             </button>
-            <button className="px-7 py-3 bg-transparent border border-white/10 hover:border-white/30 text-[#9ab0a0] hover:text-white font-normal text-sm rounded-lg transition-all duration-200">
+            <button onClick={()=>window.open("https://www.primitive.dev/docs")} className="px-7 py-3 bg-transparent border border-white/10 hover:border-white/30 text-[#9ab0a0] hover:text-white font-normal text-sm rounded-lg transition-all duration-200">
               Read Docs →
             </button>
           </div>

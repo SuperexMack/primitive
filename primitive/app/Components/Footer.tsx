@@ -27,7 +27,7 @@ export default function Footer({ myref }: any) {
               <Link href={"/"}>
                 <Linkedin></Linkedin>
               </Link>
-              <Link href={"/"}>
+              <Link href={"https://github.com/SuperexMack/primitive"}>
                 <Github></Github>
               </Link>
               <Link href={"/"}>
