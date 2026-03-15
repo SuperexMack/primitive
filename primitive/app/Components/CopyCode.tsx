@@ -6,6 +6,7 @@ import { Copy } from "lucide-react";
 import { ToastContainer, toast } from "react-toastify";
 export default function () {
   const firstCode = `
+
 import { handleWebhook, MyMXWebhookError, MYMX_CONFIRMED_HEADER } from 'mymx';
 
 export async function POST(req: Request) {
@@ -129,7 +130,7 @@ export async function POST(req: Request) {
 
   return (
     <>
-      <div className="w-full mt-[9rem] flex flex-col items-center justify-center">
+      <div className="w-full mt-[4rem] flex flex-col items-center justify-center">
         <div className="w-auto rounded-2xl border-2 border-white h-auto p-3 flex items-center justify-center space-x-6">
           {select ? (
             <>
@@ -174,11 +175,11 @@ export async function POST(req: Request) {
           )}
         </div>
 
-        <div className="w-[70%] h-auto">
-          <div className="relative z-50 w-[100px] left-[90%] top-[80px]">
+        <div className="md:w-[70%] w-full h-auto">
+          <div className="relative z-50 w-[100px] left-[75%] md:left-[90%] top-[50px] md:top-[80px]">
             <button
               onClick={() => textCopied(firstCode)}
-              className={select ? `border-2 border-white p-2` : "hidden"}
+              className={select ? `md:border-2 md:border-white p-1 md:p-2 hover:cursor-pointer font-bold border-1 rounded-lg border-white ` : "hidden"}
             >
               Copy
             </button>
@@ -188,8 +189,9 @@ export async function POST(req: Request) {
             {value}
           </SyntaxHighlighter>
         </div>
+        <ToastContainer></ToastContainer>
       </div>
-      <ToastContainer></ToastContainer>
+      
     </>
   );
 }

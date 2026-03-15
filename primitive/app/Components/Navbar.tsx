@@ -3,7 +3,7 @@ import Link from  "next/link"
 import { Github , List} from 'lucide-react';
 import { Videotape } from 'lucide-react';
 import { useState } from "react";
-export default function Navbar({feature,works,pricing}:any){
+export default function Navbar({works,contact}:any){
 
    const [touched,setTouched] = useState(false)
 
@@ -11,13 +11,7 @@ export default function Navbar({feature,works,pricing}:any){
       setTouched(!touched)
    }
 
-   const moveToFeature = ()=>{
-      if(!feature.current) return
-      feature.current.scrollIntoView({
-         behavior:"smooth",
-         block:"start"
-      })
-   }
+  
    
    const moveToworks = ()=>{
       if(!works.current) return
@@ -28,8 +22,8 @@ export default function Navbar({feature,works,pricing}:any){
    }
    
    const moveToprice = ()=>{
-      if(!pricing.current) return
-      pricing.current.scrollIntoView({
+      if(!contact.current) return
+      contact.current.scrollIntoView({
          behavior:"smooth",
          block:"start"
       })
@@ -37,29 +31,29 @@ export default function Navbar({feature,works,pricing}:any){
 
    return(
      <>
-     <div className="fixed top-0 w-full bg-black h-[80px] border-b border-b-slate-200 flex items-center justify-center">
+     <div className="fixed top-0 z-50 w-full bg-black h-[80px] border-b border-b-slate-200 flex items-center justify-center">
         <div className="absolute left-[10%] flex items-center justify-center space-x-2">
             <Link href={"/"}><h1 className="text-[40px] font-bold toptext">Primitive</h1></Link>
 	    </div>
 
 	<div className="flex  max-[1000px]:hidden justify-center items-center space-x-5">
-	   <Link onClick={moveToFeature} href={"/"}>Features</Link>
-	   <Link onClick={moveToworks} href={"/"}>How it works</Link>
+	   <Link href={"/"}>Primitive App</Link>
+	   <Link onClick={moveToworks} href={"/"}>Installation</Link>
       <Link onClick={moveToprice} href={"/"}>Contact us</Link>
 	   <Link href={"https://github.com/SuperexMack"}><Github></Github></Link>
 	</div>
 
    <div className="absolute min-[1000px]:hidden right-[10%]">
-       <List onClick={toogle} className="text-black h-[30px] w-[30px]"></List>
+       <List onClick={toogle} className=" h-[30px] cursor-pointer w-[30px]"></List>
    </div>
 
      </div>
 
      {touched?(
        <>
-       <div className="flex z-50 fixed top-0 bg-white absolute top-20 p-4 flex-col  space-y-5 items-center w-full h-auto border-b border-slate-200 shadow-2xl shadow-slate-300">
-      <Link onClick={moveToFeature} href={"/"}>Features</Link>
-	   <Link onClick={moveToworks} href={"/"}>How it works</Link>
+       <div className="flex z-50 fixed top-0 bg-black absolute top-20 p-4 flex-col  space-y-5 items-center w-full h-auto border-b border-slate-200 shadow-2xl shadow-black">
+      <Link href={"/"}>Primitive App</Link>
+	   <Link onClick={moveToworks} href={"/"}>Installation</Link>
       <Link onClick={moveToprice} href={"/"}>Contact us</Link>
 	   <Link href={"https://github.com/SuperexMack"}><Github></Github></Link>
      </div>
