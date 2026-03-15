@@ -37,10 +37,10 @@ export default function Navbar({works,contact}:any){
 	    </div>
 
 	<div className="flex  max-[1000px]:hidden justify-center items-center space-x-5">
-	   <Link target="_blank" href={"https://www.primitive.dev/login"}>Primitive App</Link>
-	   <Link onClick={moveToworks} href={"/"}>Installation</Link>
-      <Link onClick={moveToprice} href={"/"}>Contact us</Link>
-	   <Link href={"https://github.com/SuperexMack/primitive"}><Github></Github></Link>
+	   <Link className="text-white" target="_blank" href={"https://www.primitive.dev/login"}>Primitive App</Link>
+	   <Link className="text-white" onClick={moveToworks} href={"/"}>Installation</Link>
+      <Link className="text-white" onClick={moveToprice} href={"/"}>Contact us</Link>
+	   <Link className="text-white" href={"https://github.com/SuperexMack/primitive"}><Github></Github></Link>
 	</div>
 
    <div className="absolute min-[1000px]:hidden right-[10%]">
@@ -52,10 +52,10 @@ export default function Navbar({works,contact}:any){
      {touched?(
        <>
        <div className="flex z-50 md:hidden fixed top-0 bg-black/60 backdrop-blur-md absolute top-20 p-4 flex-col  space-y-5 items-center w-full h-auto  shadow-2xl shadow-black">
-      <Link target="_blank" href={"https://www.primitive.dev/login"}>Primitive App</Link>
-	   <Link onClick={moveToworks} href={"/"}>Installation</Link>
-      <Link onClick={moveToprice} href={"/"}>Contact us</Link>
-	   <Link href={"https://github.com/SuperexMack/primitive"}><Github></Github></Link>
+      <Link className="text-white" target="_blank" href={"https://www.primitive.dev/login"}>Primitive App</Link>
+	   <Link className="text-white" onClick={moveToworks} href={"/"}>Installation</Link>
+      <Link className="text-white" onClick={moveToprice} href={"/"}>Contact us</Link>
+	   <Link className="text-white" href={"https://github.com/SuperexMack/primitive"}><Github></Github></Link>
      </div>
        </>
      ):(
